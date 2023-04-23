@@ -4,6 +4,7 @@ services:
   api:
     build:
       context: .
+    image: mikepodolskiy/skypro_lesson26
     ports:
       - 80:80
     volumes:
@@ -16,6 +17,8 @@ services:
   migrations:
     build:
       context: .
+    image: mikepodolskiy/skypro_lesson26
+
     volumes:
       - ./docker_config.py:/code/default_config.py
     depends_on:
