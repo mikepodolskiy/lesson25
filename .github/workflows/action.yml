@@ -13,7 +13,7 @@ jobs:
       - name: docker push
         run: docker push mikepodolskiy/skypro_lesson26:$GITHUB_REF_NAME-$GITHUB_RUN_ID
   deploy:
-    runs-os: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: clone code
         uses: actions/checkout@v2
